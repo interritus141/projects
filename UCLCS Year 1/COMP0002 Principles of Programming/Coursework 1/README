@@ -1,0 +1,27 @@
+Item Inventory 
+Purpose: A program that is able to store items in an inventory for a small business.
+
+Steps to compile and run the program:
+
+Step 1: Compiling the code.
+Type the following command into the windows terminal:
+
+gcc inventory.c
+
+This will compile the program into an executable file labeled a.exe.
+Alternatively, type:
+
+gcc -o {insert name} inventory.c
+
+to compile the program into a named executable file.
+
+Step 2: Run the program.
+To execute the file, run:
+
+./a.exe if the file is not named
+./{insert name}.exe if file is named
+
+This will bring up the menu screen for the program, listing options that you can choose from.
+There are options to save and load external files into the program bring up external inventories.
+
+
