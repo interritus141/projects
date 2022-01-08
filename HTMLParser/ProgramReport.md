@@ -4,7 +4,7 @@
 
 <ins>In both programs:</ins> The program is able to confirm that each tag is a valid HTML tag, each tag has a corresponding closing tag if needed, tags are nested properly, there are &lt;html> and &lt;/html> tags around the entire document, and there is a single &lt;head> section followed by a single &lt;body> section. 
 
-<ins>n C:</ins> If an error is found, an error message is displayed and the program stops, so only the first error found is reported. If no errors are found the program displays a 
+<ins>In C:</ins> If an error is found, an error message is displayed and the program stops, so only the first error found is reported. If no errors are found the program displays a 
 message that the HTML was correct. 
 
 <ins>In Haskell:</ins> If an error is found, the program will only display the tag that is erroneous, and will not be specific in what the error is. 
@@ -34,6 +34,7 @@ lower the readability of the code and overall quality. In general, error message
 has an error, hence the messages have to be concise yet specific. C is the language that can provide error messages in such a way while not impeding the quality of the program. 
 
 <ins>Evaluation Criteria 2: Debugging Code</ins>
+
 It is easier to debug the program in Haskell. Being a functional programming language, its functions are independent of one another and due to 
 the nature of type signatures, the return type of the functions will be consistent. This means that if a new function is tested and works as normal, it will work just as well when 
 fitted into a larger program, provided that the parameters fit the type signatures. Hence, Haskell is better in this aspect. Evaluation Criteria 3: Code Quality By nature of the 
@@ -41,5 +42,6 @@ languages’ syntax, Haskell is much shorter in terms of the number of lines of 
 to understand, and may actually make it more difficult. Hence, the program in C is more readable and easier to understand. 
 
 <ins>Conclusion</ins>
+
 Considering that the program is a parser for HTML files, providing quality error messages should be the top priority and one of the bigger concerns. As such, C will be 
 the more suitable language for writing the program.
