@@ -1,4 +1,3 @@
-# projects
-collection of personal and school projects done
+# UCL Computer Science Projects
 
-folder of year 1 and year 2 UCL Computer Science modules and projects
+Collection of all personal and student projects done in UCL CS Year 1 2020-2021.
