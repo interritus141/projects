@@ -1,5 +1,0 @@
-This is a Java StringArray class that can store a collection of String object references (i.e a collection of Strings).
-
-The program includes a SpellCheck class. This class accepts input from the user via the terminal or uploading a file, and checks the text in the input against a dictionary of words. The words which found no match in the dictionary are then displayed in the terminal. 
-
-This program also includes a WordCorrector class. This class scans through the list of words that do not match, and then provides suggestions from the dictionary that are similar to the aforementioned words. The user can then select one suggestion from the options, which will then replace the unmatched word in the file or the text. If the user does not find the suggestions to be satisfactory, they can then leave the original word unchanged in the text. The final edited file will then replace the original file with all the corrected words.
