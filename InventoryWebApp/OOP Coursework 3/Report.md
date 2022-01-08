@@ -24,6 +24,6 @@ Then, the view of the app, or the Java Server Pages (JSP), is then designed. The
 
 #### Evaluation
 
-Overall, the design process has been rather challenging as I have not programmed a full web application using the MVC model as such. I felt that the design of the classes could have been done better, and proper interfaces could probably have been used for the servlets. However, for most of the classes, I feel like there is an appropriate level of cohesiveness and there is a good use of OO design throughout. 
+Overall, the design process has been challenging as I have not programmed a full web application using the MVC model as such. I felt that the design of the classes could have been done better, and proper interfaces could probably have been used for the servlets. However, for most of the classes, I feel like there is an appropriate level of cohesiveness and there is a good use of OO design throughout.
 
 While there may have been some bumps in the quality of the programming, all of the requirements have been met by the program. This warrants some merit in itself, and I think that this is a really good learning experience.
