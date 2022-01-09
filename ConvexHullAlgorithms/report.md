@@ -2,7 +2,7 @@
 
 ### 1. Jarvis March (Gift Wrapping) Algorithm
 
-This algorithm first selects a starting point on the edge, then calculates the interior an￾gle between the starting point and all the other points. The point that has the largest interior angle is then part of the convex hull. The entire set of N points is then cycled through until it returns to the starting point. For the purpose of this experiment, we use the set of N = [100, 500, 1000, 5000, 10000, 15000, 20000].
+This algorithm first selects a starting point on the edge, then calculates the interior angle between the starting point and all the other points. The point that has the largest interior angle is then part of the convex hull. The entire set of N points is then cycled through until it returns to the starting point. For the purpose of this experiment, we use the set of N = [100, 500, 1000, 5000, 10000, 15000, 20000].
 
 #### 1.1 Random Input
 
