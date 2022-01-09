@@ -34,7 +34,7 @@ The main bulk of the cost comes at the point when a vertex is added to the queue
 
 **CC (Experimental): Linear ∼ O(E + V)**
 
-To test the theoretical CC, 2 separate lines were plotted as seen on Figure 1a. One of them is plotted by varying the number of vertices and keeping the number of edges constant, and vice versa for the other one. This shows that the time taken scales somewhat proportionally to the number of edges and vertices, and approximately has a time complexity of O(E + V ).
+To test the theoretical CC, 2 separate lines were plotted as seen on Figure 1a. One of them is plotted by varying the number of vertices and keeping the number of edges constant, and vice versa for the other one. This shows that the time taken scales somewhat proportionally to the number of edges and vertices, and approximately has a time complexity of O(E + V).
 
 ## 3. Minimum distance travelled between 2 stations
 
@@ -42,7 +42,7 @@ To test the theoretical CC, 2 separate lines were plotted as seen on Figure 1a. 
 
 **Algorithm:** Dijkstra’s Algorithm
 
-The main deliberation for this function is between Edge-Weighted DAG, Dijkstra’s algorithm, and the Bellman-Ford algorithm. By comparison, Edge-Weighted DAG has the lowest time complexity at O(E+V), however it must be implemented in a graph that does not contain cycles, hence it cannot be used. As there are no negative weights in the graph, the better solution will be Dijkstra’s as its CC is O(ElogV ) in both average and worst cases while Bellman-Ford has a CC of O(EV ) in both cases.
+The main deliberation for this function is between Edge-Weighted DAG, Dijkstra’s algorithm, and the Bellman-Ford algorithm. By comparison, Edge-Weighted DAG has the lowest time complexity at O(E+V), however it must be implemented in a graph that does not contain cycles, hence it cannot be used. As there are no negative weights in the graph, the better solution will be Dijkstra’s as its CC is O(ElogV) in both average and worst cases while Bellman-Ford has a CC of O(EV) in both cases.
 
 **DS:** Binary Heap Min-Oriented Priority Queue
 
@@ -85,7 +85,9 @@ When there are 7 or fewer stations, BF algorithm is able to perform the function
 The execution time of BF algorithm is now > 1s, and only increases at O(N!). Improved NN, while generating sub-optimal routes, can be executed at a much lower cost and can support up to hundreds of stations. Given the context that this API is for the London Underground Network, in which the function to create a new railway line, if performed, should be executed on a set of 50 - 60 stations at most (current max number of stations for a line stands at 60). If such reasoning is to be followed, then it will make sense for improved NN to be used.
 
 **CC (Theoretical): O(N3)**
+
 The CC of the base NN algorithm is O(N2). The repetition heuristic iterates through all the points again to change the starting point, hence O(N3).
 
 **CC (Experimental): ∼ O(N3)**
+
 According to Figure 4, the algorithm grows upwards in a quadratic/cubic like manner, however it stills grows much faster than the base NN algorithm, hence suggesting that it tends towards O(N3).
