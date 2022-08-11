@@ -1,0 +1,137 @@
+.sidebar {
+  overflow: hidden;
+  display: flex;
+  min-width: 15em;
+  flex-direction: column;
+  background-color: $blue;
+  box-shadow: 6px 5px 20px -3px #828282;
+  @media screen and (max-width: $tablet) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+
+  .head {
+    //@include highlight;
+    height: 3.5em;
+    background-color: $darkblue;
+    box-shadow: 0px 10px 31px 16px $darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      background-color: transparent;
+      width: 12em;
+    }
+  }
+  .nav {
+    //@include highlight;
+    height: calc(100%);
+    padding: 2em 0em 0em 0em;
+    .category {
+      padding: 1.3em 0em 0.7em 1em;
+      font-size: large;
+      font-weight: 500;
+      color: $gray;
+    }
+    .item {
+      padding: 0.5em 0em 0.5em 1em;
+      position: relative;
+      font-size: medium;
+      font-weight: 500;
+      color: $lightgray;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+
+      .text {
+        padding-left: 1em;
+      }
+
+      &:hover {
+        background-color: $darkblue;
+        .shape {
+          position: absolute;
+          background-color: $orange;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          width: 0.2em;
+          height: 100%;
+        }
+      }
+
+      &.current {
+        background-color: $darkblue;
+        .shape {
+          position: absolute;
+          background-color: $orange;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          width: 0.2em;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-right-out {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.toggle-btn {
+  display: none;
+}
+
+@media screen and (max-width: $tablet) {
+  .toggled {
+    display: flex;
+    //transform: translateX(-100%);
+    animation: slide-right-out 0.5s ease 0s 1 reverse forwards;
+  }
+  .toggle-btn {
+    display: flex;
+    position: absolute;
+    z-index: 15;
+    left: 1em;
+    bottom: 1em;
+    padding: 0.8em;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      to right top,
+      #051937,
+      #004d7a,
+      #008793,
+      #00bf72,
+      #a8eb12
+    );
+
+    svg {
+      width: 2em;
+      height: 2em;
+      fill: white;
+    }
+  }
+
+  .toggled.true {
+    display: flex;
+    animation: slide-right-out 0.5s ease 0s 1 normal forwards;
+  }
+
+  .toggled.false {
+    display: none;
+  }
+}

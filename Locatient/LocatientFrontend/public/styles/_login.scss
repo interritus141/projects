@@ -1,0 +1,77 @@
+div.login-page {
+  position: relative;
+  width: 100vw;
+  height: 99vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div.shape-1 {
+    position: absolute;
+    z-index: -10;
+    width: 50rem;
+    transform: translate(-15rem, -10rem) rotateZ(90deg);
+  }
+
+  div.shape-2 {
+    position: absolute;
+    z-index: -10;
+    width: 30rem;
+    transform: translate(10rem, 15rem);
+  }
+
+  div.title {
+    position: absolute;
+    font-size: 3rem;
+    top: 0.2em;
+    left: 0.2em;
+    font-style: italic;
+    font-weight: 600;
+    color: $blue;
+    &::first-letter {
+      transform: scale(2);
+    }
+  }
+  div.card {
+    //@include highlight;
+    border-radius: 0.3em;
+    box-shadow: 9px 7px 19px -6px #8f8f8f;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    @media only screen and (min-width: $phone) {
+      width: 18em;
+    }
+    @media only screen and (min-width: $tablet) {
+      width: 19em;
+    }
+    @media only screen and (min-width: $laptop) {
+      width: 20em;
+    }
+    @media only screen and (min-width: $desktop) {
+      width: 20em;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: baseline;
+    div.login-title {
+      font-size: xx-large;
+      padding: 1em 0.5em 0.2em 0.5em;
+      font-weight: 600;
+    }
+    div.meaningful {
+      padding: 0em 1em 1.7em 1em;
+      color: $darkgray;
+    }
+    .username {
+      margin: 0em 1em 1em 1em;
+    }
+    .password {
+      margin: 0em 1em 1em 1em;
+    }
+    .submission {
+      margin: 0em 1em 1em 1em;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+PASS test/units/administration.test.js
+  Administration Utilities
+    Login
+      √ Admin Credential (691 ms)
+    Register
+      √ User Registration and Unregister (496 ms)
+    User
+      Find all
+        √ No access right (10 ms)
+        √ Fetching data (42 ms)
+      GetQRCode
+        given no authorization
+          √ return 401 (8 ms)
+        given no nhsid
+          √ return 400 (24 ms)
+        given all information
+          √ return 400 (205 ms)
+    Location
+      √ given no privilege (9 ms)
+      √ Adding and removing locations (139 ms)
+    Device
+      √ given no privilege (8 ms)
+      √ Adding and removing devices (117 ms)
+
+PASS test/units/frontendData.test.js
+  Frontend Utilities
+    Login
+      √ User Credential (496 ms)
+    Data Requests
+      devices
+        √ No access right (19 ms)
+        √ Fetching data (139 ms)
+      locations
+        √ No access right (8 ms)
+        √ Fetching data (43 ms)
+      patients
+        √ No access right (9 ms)
+        √ Fetching data (41 ms)
+      logs
+        Login
+          √ Creating Authentication (74 ms)
+        Default
+          √ No access right (7 ms)
+          √ Fetching data (43 ms)
+          √ Data limiting (43 ms)
+        Filter through patient id
+          √ No access right (10 ms)
+          √ Fetching data (60 ms)
+          √ Validify id (41 ms)
+        Filter through location
+          √ No access right (8 ms)
+          √ Fetching data (58 ms)
+          √ Validify location (45 ms)
+
+PASS test/units/logging.test.js
+  Logging Utilities
+    Logging Device
+      √ Constructing Device (835 ms)
+    Find preset locations
+      √ No access right (10 ms)
+      √ Fetching data (45 ms)
+    Updating new logs
+      √ No access right (7 ms)
+      √ Updating data (79 ms)
+
+Test Suites: 3 passed, 3 total
+Tests:       33 passed, 33 total
+Snapshots:   0 total
+Time:        7.247 s
+Ran all test suites.

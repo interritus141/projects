@@ -1,0 +1,13 @@
+$blue: #1976d2;
+$darkblue: #1565c0;
+$lightblue: #1e88e5;
+$lightbluex: #2196f3;
+$lightbluexx: #64b5f6;
+$lightgray: #e0e0e0;
+$gray: #bdbdbd;
+$darkgray: #757575;
+$orange: #ff6e40;
+
+@mixin shadow {
+  box-shadow: 5px 5px 15px 5px #999999;
+}

@@ -1,0 +1,55 @@
+.top {
+  width: calc(100vw - 240px);
+  @media screen and (max-width: $tablet) {
+    width: 100vw;
+  }
+  height: 3.5em;
+  border-bottom: 1px solid $lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .time {
+    font-size: large;
+    color: white;
+    font-weight: 600;
+    padding: 0.3em 0.5em;
+    margin-left: 1em;
+    background-image: linear-gradient(
+      to right top,
+      #283593,
+      #24419f,
+      #204daa,
+      #1b59b5,
+      #1565c0
+    );
+    border-radius: 0.2em;
+  }
+
+  .notifications {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .status {
+      font-size: small;
+      font-weight: 700;
+      color: white;
+      padding: 0.5em;
+      border-radius: 0.3em;
+      background: linear-gradient(to right, #fe9365, #feb798);
+    }
+    .bell {
+      margin: 0em 1em 0em 0.5em;
+    }
+    .avatar {
+      margin: 0em 1em 0em 0.5em;
+      .MuiChip-root {
+        font-weight: 700;
+        .MuiAvatar-root {
+          color: white;
+        }
+      }
+    }
+  }
+}
